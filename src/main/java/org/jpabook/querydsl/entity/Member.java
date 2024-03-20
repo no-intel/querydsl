@@ -19,6 +19,9 @@ public class Member {
     @JoinColumn(name = "team_id")
     private Team team;
 
+    @Version
+    private Integer version;
+
     public Member(String username) {
         this.username = username;
     }
